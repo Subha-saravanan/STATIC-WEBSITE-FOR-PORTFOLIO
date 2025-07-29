@@ -1,0 +1,160 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0faff;
+  color: #333;
+  transition: all 0.4s ease;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #6c5ce7;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+header nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffeaa7;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+/* Projects, Interns */
+.project-card {
+  background: #dfe6e9;
+  margin: 1.5rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Fix for unwanted emoji bullets */
+.training-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Resume Button */
+.resume-btn {
+  background: #0984e3;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background: #74b9ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #2d3436;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1000;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background: #2d3436;
+}
+
+.dark-mode .resume-btn {
+  background: #00cec9;
+}
+
+.dark-mode nav a {
+  color: #ffeaa7;
+}
+
+.dark-mode .project-card,
+.dark-mode section,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li {
+  color: #ffffff;
+}
